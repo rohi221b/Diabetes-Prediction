@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai&family=Bree+Serif&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "diabetes">
+        
+        <h1><u>Know your Diabetes status</u></h1>
+        <form action = "{{url_for('predict')}}" method = "post"> 
+             <div class="form-box">
+                 <label for="name">Glucose concentration : </label>
+                 <input type = "text" name="name" min="0" max="199" placeholder="Enter Your Glucose concentration">
+             </div>
+             <div class="form-box">
+                <label for="Diastolic bp">Diastolic bp : </label>
+                <input type = "text" name="Diastolic bp" min="0" max="122" placeholder="Enter Your Diastolic bp">
+            </div>
+            <div class="form-box">
+                <label for="Thickness">Thickness : </label>
+                <input type = "text" name="Thickness" min="0" max="100" placeholder="Enter Your Thickness of Skin">
+            </div>
+            <div class="form-box">
+                <label for="Insulin">Insulin : </label>
+                <input type = "text" name="Insulin" min="0" max="850" placeholder="Enter Your Insulin">
+            </div>
+            <div class="form-box">
+                <label for="BMI">BMI : </label>
+                <input type = "text" name="BMI" min="0" max="70" placeholder="Enter Your BMI">
+            </div>
+            <div class="form-box">
+                <label for="Age">Age : </label>
+                <input type = "text" name="Age" min="0" max="81" placeholder="Enter Your Age">
+            </div>
+            <div class="form-box">
+                <button type="submit">Check</button>
+            </div>
+        </form>
+        <h1 id="result">{{prediction_text}}</h1>
+    </div>
+ 
+</body>
+
+</html>

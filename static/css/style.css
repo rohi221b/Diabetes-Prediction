@@ -1,0 +1,70 @@
+#diabetes 
+{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    /* height: 500px; */
+    justify-content: center;
+    align-items: center;
+}
+
+#diabetes::before {
+    content: "";
+    position: absolute;
+    background: url('..\\COCo-Circle-Thick-Blue.png') no-repeat center center;
+    height: 70%;
+    width: 60%;
+    z-index: -1;
+    opacity: .8;
+    top: 100px;
+    left: 250px;
+}
+
+#diabetes h1{
+    font-family: 'Bree Serif', serif;
+}
+
+#diabetes form{
+     
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0px;
+    text-align:center;
+    /* width: 30; */
+}
+
+#diabetes label{
+    font-size: 18px;
+    color: #333;
+    height: 20px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: right;
+    float:left;
+    font-family: 'Bree Serif', serif;
+     
+}
+
+#diabetes input{
+    height: 20px;
+    width: 300px;
+    border: 1px solid #000;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    padding: .5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#diabetes button{
+
+    height: 30px;
+    width: 150px;
+    margin-top: 30px;
+    border-radius: 5px;
+
+}
